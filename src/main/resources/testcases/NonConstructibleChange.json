@@ -1,0 +1,18 @@
+{
+  "data": [
+    { "coins": [1, 2, 5], "expectedOutput": 4 },
+    { "coins": [5, 7, 1, 1, 2, 3, 22], "expectedOutput": 20 },
+    { "coins": [1, 1, 1, 1, 1], "expectedOutput": 6 },
+    { "coins": [1, 5, 1, 1, 1, 10, 15, 20, 100] , "expectedOutput": 55 },
+    { "coins": [6, 4, 5, 1, 1, 8, 9] , "expectedOutput": 3 },
+    { "coins": [] , "expectedOutput": 1 },
+    { "coins": [87] , "expectedOutput": 1 },
+    { "coins": [5, 6, 1, 1, 2, 3, 4, 9] , "expectedOutput": 32 },
+    { "coins": [5, 6, 1, 1, 2, 3, 43] , "expectedOutput": 19 },
+    { "coins": [1, 1] , "expectedOutput": 3 },
+    { "coins": [2] , "expectedOutput": 1 },
+    { "coins": [1] , "expectedOutput": 2 },
+    { "coins": [109, 2000, 8765, 19, 18, 17, 16, 8, 1, 1, 2, 4] , "expectedOutput": 87 },
+    { "coins": [1, 2, 3, 4, 5, 6, 7] , "expectedOutput": 29 }
+  ]
+}
