@@ -20,4 +20,15 @@ public class FirstDuplicateValueImpl implements FirstDuplicateValue {
         }
         return -1;
     }
+
+    @Override
+    public int getFirstDuplicateValue2(int[] array) {
+        for (int value : array) {
+            int absValue = Math.abs(value);
+            if (absValue - 1 < 0)
+                return absValue;
+            array[absValue - 1] *= -1;
+        }
+        return -1;
+    }
 }
