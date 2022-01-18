@@ -11,15 +11,15 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @Slf4j
 public class CodingPracApplication {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 //		SpringApplication.run(CodingPracApplication.class, args);
 
-		if (System.getProperty("java.version").substring(0,3).equals("1.8") ) {
+        if (System.getProperty("java.version").startsWith("1.8")) {
 
-			SpringApplication springApplication = new SpringApplication(CodingPracApplication.class);
-			springApplication.setBanner(new SetSpringBanner());
-			springApplication.run(args);
-			log.info("Inside Spring application for coding practice.");
+            SpringApplication springApplication = new SpringApplication(CodingPracApplication.class);
+            springApplication.setBanner(new SetSpringBanner());
+            springApplication.run(args);
+            log.info("Inside Spring application for coding practice.");
 			/*log.info(System.getProperty("java.version"));
 			log.info(System.getProperty("java.specification.version"));
 			log.info(System.getProperty("java.vm.specification.version"));
@@ -30,8 +30,9 @@ public class CodingPracApplication {
 			log.info(System.getProperty("user.name"));
 			log.info(System.getProperty("user.home"));
 			log.info(System.getProperty("user.dir"));*/
-		} else {
-			log.error("Java version used(" + System.getProperty("java.version").substring(0,3) + ") is not 1.8");
-		}
-	}
+
+        } else {
+            log.error("Java version used(" + System.getProperty("java.version").substring(0, 3) + ") is not 1.8");
+        }
+    }
 }
